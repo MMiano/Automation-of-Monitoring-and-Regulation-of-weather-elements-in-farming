@@ -5,8 +5,8 @@
 #include <FirebaseArduino.h>
 #include <dht.h>
 
-#define WIFI_SSID "Kibet"
-#define WIFI_PASSWORD "kibetkirui"
+#define WIFI_SSID "ssid"
+#define WIFI_PASSWORD "password"
 
 #define FIREBASE_HOST "practicals001-default-rtdb.firebaseio.com"
 #define FIREBASE_AUTH "ENXolIBUTbEHkjBQYgJ9lDx1KAFEuddFaHae3uPg"
