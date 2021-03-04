@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/humidity_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:text="Humidity"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Light_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:text="Light"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/humidity_text" />
+
+    <TextView
+        android:id="@+id/soil_moisture_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:text="Soil Moisture"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Light_text" />
+
+    <TextView
+        android:id="@+id/soil_ph_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:text="Soil PH"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/soil_moisture_text" />
+
+    <TextView
+        android:id="@+id/temperature_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:text="Temperature"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/soil_ph_text" />
+
+    <TextView
+        android:id="@+id/humidity_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:text="TextView"
+        android:textSize="20dp"
+        app:layout_constraintStart_toEndOf="@+id/humidity_text"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/light_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:text="TextView"
+        android:textSize="20dp"
+        app:layout_constraintStart_toEndOf="@+id/Light_text"
+        app:layout_constraintTop_toTopOf="@+id/Light_text" />
+
+    <TextView
+        android:id="@+id/soil_moisture_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:text="TextView"
+        android:textSize="20dp"
+        app:layout_constraintStart_toEndOf="@+id/soil_moisture_text"
+        app:layout_constraintTop_toTopOf="@+id/soil_moisture_text" />
+
+    <TextView
+        android:id="@+id/soil_ph_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:text="TextView"
+        android:textSize="20dp"
+        app:layout_constraintStart_toEndOf="@+id/soil_ph_text"
+        app:layout_constraintTop_toTopOf="@+id/soil_ph_text" />
+
+    <TextView
+        android:id="@+id/temperature_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:text="TextView"
+        android:textSize="20dp"
+        app:layout_constraintStart_toEndOf="@+id/temperature_text"
+        app:layout_constraintTop_toTopOf="@+id/temperature_text" />
+
+    <Button
+        android:id="@+id/button_humidity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginLeft="37dp"
+        android:text="Regulate"
+        app:layout_constraintStart_toEndOf="@+id/humidity_value"
+        app:layout_constraintTop_toTopOf="@+id/humidity_value" />
+
+    <Button
+        android:id="@+id/button_light"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Regulate"
+        android:layout_marginLeft="37dp"
+        app:layout_constraintStart_toEndOf="@+id/light_value"
+        app:layout_constraintTop_toTopOf="@+id/light_value" />
+
+    <Button
+        android:id="@+id/button_moisture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="37dp"
+        android:text="Regulate"
+        app:layout_constraintStart_toEndOf="@+id/soil_moisture_value"
+        app:layout_constraintTop_toTopOf="@+id/soil_moisture_text" />
+
+    <Button
+        android:id="@+id/button_ph"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Regulate"
+        android:layout_marginLeft="37dp"
+        app:layout_constraintStart_toEndOf="@+id/soil_ph_value"
+        app:layout_constraintTop_toTopOf="@+id/soil_ph_value" />
+
+    <Button
+        android:id="@+id/button_temperature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="37dp"
+        android:layout_marginLeft="37dp"
+        android:text="Regulate"
+        app:layout_constraintStart_toEndOf="@+id/temperature_value"
+        app:layout_constraintTop_toTopOf="@+id/temperature_value" />
+
+    <Button
+        android:id="@+id/user_regulate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="User Regulate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/temperature_value" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
